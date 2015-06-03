@@ -26,3 +26,8 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+Challenge Day 20 Question:
+Reflect (in your app's README): The view does an if params[:name] check. This is a code smell. How could you do this better?
+
+The name symbol will always return true even if it is blank, thereby making the if check useless.  You could improve this by checking that the length of name.split was greater than 0 and checking to see that valid characters are used in the string(a-z, A-Z) using regular expressions.
