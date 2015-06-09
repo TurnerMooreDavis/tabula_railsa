@@ -21,6 +21,6 @@
       <%= check_box_tag :puppies %> Puppies<br>
       <%= check_box_tag :cold_hard_cash %> Cold Hard Cash<br>
     </div>
-    <%= submit_tag %>
+    <%= submit_tag "Save", data: { confirm: "Are you sure?" }%>
   <% end %>
 <% end %>
